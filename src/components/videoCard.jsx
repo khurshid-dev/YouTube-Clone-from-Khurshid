@@ -7,7 +7,7 @@ import { demoBanner } from '../constants'
 const VideoCard = ({ video }) => {
 
     return (  
-        <div className='VideoItem flex flex-col max-w-fit'>
+        <div className='VideoItem flex flex-col max-w-fit xs:max-w-[min-content]'>
             <div className='headerVideo cursor-pointer w-[200px] xs:w-[300px] h-[111px] xs:h-[167px] overflow-hidden rounded-lg'>
                 <Link to={`/video/${video.id.videoId}`}>
                     <img src={video?.snippet?.thumbnails?.high?.url || demoBanner} className='relative bottom-[19px] xs:bottom-[28px] transition-all' alt={video?.snippet?.channelTitle} />

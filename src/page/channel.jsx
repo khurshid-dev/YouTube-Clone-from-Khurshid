@@ -25,19 +25,19 @@ const Channel = () => {
 
     return (
         <>
-            <div className='banner-channel h-[151px] overflow-hidden'>
+            <div className='banner-channel h-[151px] xs:h-[125px] overflow-hidden'>
                 <img src={channelDetail?.brandingSettings?.image?.bannerExternalUrl} 
-                    className='w-[100vw] h-[509px] relative bottom-[181px]' alt="" />
+                    className='w-[100vw] h-[509px] ss:h-[343px] xs:h-[259px] relative bottom-[181px] ss:bottom-[98px] xs:bottom-[77px]' alt="" />
             </div>
             <Container maxWidth='xl' className='mt-3'>
                 <div className="main-channel px-3 py-3">
-                    <div className='flex items-center basis-[25%] gap-2'>
-                        <div className='w-full mr-[1%] flex items-center gap-2'>
-                            <img className='max-w-[100px] h-[100px] rounded-full' 
+                    <div className='flex xs:flex-col xs:text-center items-center basis-[25%] gap-2'>
+                        <div className='w-full mr-[1%] flex xs:flex-col items-center gap-2'>
+                            <img className='max-w-[100px] h-[100px] ss:max-w-[60px] ss:h-[60px] rounded-full' 
                                 src={channelDetail?.snippet?.thumbnails?.high?.url} 
                                 alt={channelDetail?.brandingSettings?.title} />
                             <div className='flex flex-col'>
-                                <div className='flex items-center gap-1 text-base leading-3 font-semibold w-[max-content] cursor-pointer'>
+                                <div className='flex items-center xs:mx-auto gap-1 text-base leading-3 font-semibold w-[max-content] cursor-pointer'>
                                     <h6>{channelDetail?.brandingSettings?.channel?.title} </h6>
                                     <MdOutlineDone className='bg-primary rounded-full text-[yellow] box-border p-[1px] text-base' /></div>
                                 <div className='text-[12px] w-[max-content] text-[rgb(171,171,171)]'>{channelDetail?.statistics?.viewCount.slice(0, 2)} тыс. подписчиков</div>    
