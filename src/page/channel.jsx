@@ -43,7 +43,7 @@ const Channel = () => {
                                 <div className='text-[12px] w-[max-content] text-[rgb(171,171,171)]'>{channelDetail?.statistics?.viewCount.slice(0, 2)} тыс. подписчиков</div>    
                             </div> 
                         </div>
-                        <div className='btn-primary rounded-md ml-2'>
+                        <div className='btn-primary rounded-md ml-2 xs:mx-auto xs:ml-0'>
                             <Button variant={`${subscrided ? 'outlined': 'contained'}`} size="medium" onClick={()=>setSubscrided((prev)=>!prev)}>{`${subscrided ? 'Подписано' : 'Подписаться'}`}</Button>
                         </div>
                     </div>
