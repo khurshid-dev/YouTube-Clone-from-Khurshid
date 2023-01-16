@@ -140,4 +140,9 @@ body {
 }
 
 
-@media only screen and (max-width: 420px) {}
+@media only screen and (max-width: 420px) {
+    .react-player {
+        width: 99% !important;
+        height: 223px !important;
+    }
+}

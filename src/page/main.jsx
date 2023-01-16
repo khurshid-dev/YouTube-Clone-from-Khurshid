@@ -19,7 +19,7 @@ const Main = () => {
     return (
         <div className='flex flex-col'>
             <Category selectedCategoryHandler={selectedCategoryHandler} selectedCategory={selectedCategory} />
-            <div className='w-[90%] h-[90vh] mx-[4%] mt-4'>
+            <div className='w-[92vw] h-[90vh] mx-[4%] mt-4'>
                 <h4 className='text-2xl font-bold mb-4'>{selectedCategory} <span className='text-secondary'>Videos</span></h4>
                 <Videos videos={videos} />
             </div>

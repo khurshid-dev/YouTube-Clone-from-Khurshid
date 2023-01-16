@@ -40,7 +40,6 @@ const VideoDetail = () => {
         .then((id) => setVideos(id.items))
     }, [id])
 
-
     if(!videoDetail?.snippet) return <Loader />
 
     const { snippet: {channelTitle, description, publishedAt, tags, localized: {title}}, 
